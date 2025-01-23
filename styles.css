@@ -1,0 +1,135 @@
+/* כלליים */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* זה יגרום לכל הטקסט להיות מימין לשמאל */
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center; /* הכותרת הראשית במרכז */
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin: 20px 0;
+    text-align: center; /* מרכז את הלחצנים */
+}
+
+nav button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: #45a049;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+/* סרטון */
+iframe {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+/* טיפים */
+ul {
+    text-align: right; /* זה גם יעזור לכיוון הכתיבה ברשימות */
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* פוטר */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: right; /* גם בפוטר */
+}
+
+/* מדיה רספונסיבית */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        padding: 15px;
+    }
+
+    nav button {
+        font-size: 14px;
+        padding: 8px 15px;
+        margin: 5px;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    ul {
+        padding-right: 20px;
+    }
+}
+
+/* עבור מסכים קטנים במיוחד (טלפונים ניידים קטנים) */
+@media (max-width: 480px) {
+    header, footer {
+        padding: 10px;
+    }
+
+    nav button {
+        font-size: 12px;
+        padding: 6px 12px;
+        margin: 5px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 8px;
+        margin: 8px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    ul {
+        padding-right: 10px;
+    }
+}
